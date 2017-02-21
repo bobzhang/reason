@@ -173,7 +173,7 @@ let identifier_mapper f =
     default_mapper.pat mapper pat
   end;
 }
-
+(*
 let create_auto_printer_mapper =
   let attach_printer = function
     | { pstr_desc=Pstr_type type_decls } as ty ->
@@ -190,7 +190,7 @@ let create_auto_printer_mapper =
     List.rev (List.fold_left maybe_concat [] (List.map attach_printer decls))
   in
   { default_mapper with structure = find_and_attach_printers }
-
+*)
 (** unescape_stars_slashes_mapper unescapes all stars and slases in an AST
   *)
 let unescape_stars_slashes_mapper =
